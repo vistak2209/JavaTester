@@ -11,11 +11,11 @@ public class DynamicProxyHandler implements InvocationHandler {
     @Override
     public Object invoke(Object o, Method method, Object[] args) throws Throwable {
         System.out.println("**** proxy: "+ proxited.getClass() +
-        ", method: "+ method+ ", args"+args
+        ", method: "+ method+ ", args: "+args
         );
         if(args!=null){
             for(Object arg:args){
-
+                System.out.println("args: "+ arg);
             }
         }
         return method.invoke(proxited,args);
