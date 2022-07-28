@@ -1,4 +1,4 @@
-package org.example.design.proxy.nullhander;
+package org.example.design.proxy.nullhander.example.person;
 
 public class Position {
     private String title;

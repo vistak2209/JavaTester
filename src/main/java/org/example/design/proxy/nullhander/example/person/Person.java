@@ -1,4 +1,4 @@
-package org.example.design.proxy.nullhander;
+package org.example.design.proxy.nullhander.example.person;
 
 public class Person {
     public final String first;

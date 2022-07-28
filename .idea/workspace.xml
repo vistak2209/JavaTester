@@ -4,12 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1efa4386-b292-4684-867d-f008699461a8" name="Changes" comment="Add MethodSelector">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/design/proxy/nullhander/Null.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/design/proxy/nullhander/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/design/proxy/nullhander/Position.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/design/proxy/nullhander/Staff.java" afterDir="false" />
+    <list default="true" id="1efa4386-b292-4684-867d-f008699461a8" name="Changes" comment="Add NullHandler">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/design/command/robot/Operation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/design/command/robot/Robot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/design/command/robot/SnowRemovalRobot.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/design/proxy/nullhander/Null.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/design/proxy/nullhander/example/person/Null.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/design/proxy/nullhander/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/design/proxy/nullhander/example/person/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/design/proxy/nullhander/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/design/proxy/nullhander/example/person/Position.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/design/proxy/nullhander/Staff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/design/proxy/nullhander/example/person/Staff.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +85,7 @@
       <recent name="$PROJECT_DIR$/src/main/java/org/example" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Staff">
+  <component name="RunManager" selected="Application.org.example.design.command.robot.SnowRemovalRobot">
     <configuration name="SelectingMethods" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.design.proxy.SelectingMethods" />
       <module name="JavaTester.main" />
@@ -96,12 +99,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SimpleDynamicProxy" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.design.proxy.SimpleDynamicProxy" />
+    <configuration name="SnowRemovalRobot" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.design.proxy.nullhander.example.robot.SnowRemovalRobot" />
       <module name="JavaTester.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.design.proxy.*" />
+          <option name="PATTERN" value="org.example.design.proxy.nullhander.example.robot.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -110,11 +113,11 @@
       </method>
     </configuration>
     <configuration name="Staff" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.design.proxy.nullhander.Staff" />
+      <option name="MAIN_CLASS_NAME" value="org.example.design.proxy.nullhander.example.person.Staff" />
       <module name="JavaTester.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.design.proxy.nullhander.*" />
+          <option name="PATTERN" value="org.example.design.proxy.nullhander.example.person.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -135,12 +138,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WebSocketServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.WebSocketServer" />
+    <configuration name="org.example.design.command.robot.SnowRemovalRobot" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.design.command.robot.SnowRemovalRobot" />
       <module name="JavaTester.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="org.example.design.command.robot.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -150,10 +153,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Staff" />
+        <item itemvalue="Application.org.example.design.command.robot.SnowRemovalRobot" />
+        <item itemvalue="Application.SnowRemovalRobot" />
+        <item itemvalue="Application.org.example.design.proxy.nullhander.example.Staff" />
         <item itemvalue="Application.SelectingMethods" />
         <item itemvalue="Application.WebSocketClient" />
-        <item itemvalue="Application.WebSocketServer" />
       </list>
     </recent_temporary>
   </component>
@@ -187,7 +191,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658812440707</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Add NullHandler">
+      <created>1658898087822</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1658898087823</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -207,6 +218,7 @@
     <MESSAGE value="backup20220725" />
     <MESSAGE value="Add proxy mode" />
     <MESSAGE value="Add MethodSelector" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add MethodSelector" />
+    <MESSAGE value="Add NullHandler" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add NullHandler" />
   </component>
 </project>
