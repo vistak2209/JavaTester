@@ -4,9 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1efa4386-b292-4684-867d-f008699461a8" name="Changes" comment="Add command-mode design patten">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/design/command/robot/NullRobotProxyHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/design/command/robot/NullRoot.java" afterDir="false" />
+    <list default="true" id="1efa4386-b292-4684-867d-f008699461a8" name="Changes" comment="Add dynamic proxy-command mode">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/generics/Amphibian.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/generics/Automobile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/generics/Holder3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/generics/LinkedStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/generics/ThreeTuple.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/generics/TupleTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/generics/TwoTuple.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/generics/Vehicle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -80,7 +86,33 @@
       <recent name="$PROJECT_DIR$/src/main/java/org/example" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.NullRoot">
+  <component name="RunManager" selected="Application.LinkedStack">
+    <configuration name="Holder3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.generics.Holder3" />
+      <module name="JavaTester.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.generics.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LinkedStack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.generics.LinkedStack" />
+      <module name="JavaTester.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.generics.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="NullRoot" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.design.command.robot.NullRoot" />
       <module name="JavaTester.main" />
@@ -94,38 +126,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SelectingMethods" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.design.proxy.SelectingMethods" />
+    <configuration name="TupleTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.generics.TupleTest" />
       <module name="JavaTester.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.design.proxy.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SnowRemovalRobot" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.design.proxy.nullhander.example.robot.SnowRemovalRobot" />
-      <module name="JavaTester.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.design.proxy.nullhander.example.robot.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Staff" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.design.proxy.nullhander.example.person.Staff" />
-      <module name="JavaTester.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.design.proxy.nullhander.example.person.*" />
+          <option name="PATTERN" value="org.example.generics.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -148,11 +154,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LinkedStack" />
+        <item itemvalue="Application.TupleTest" />
+        <item itemvalue="Application.Holder3" />
         <item itemvalue="Application.NullRoot" />
         <item itemvalue="Application.org.example.design.command.robot.SnowRemovalRobot" />
-        <item itemvalue="Application.SnowRemovalRobot" />
-        <item itemvalue="Application.org.example.design.proxy.nullhander.example.Staff" />
-        <item itemvalue="Application.SelectingMethods" />
       </list>
     </recent_temporary>
   </component>
@@ -200,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658967181111</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Add dynamic proxy-command mode">
+      <created>1658985169721</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1658985169721</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -222,6 +235,7 @@
     <MESSAGE value="Add MethodSelector" />
     <MESSAGE value="Add NullHandler" />
     <MESSAGE value="Add command-mode design patten" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add command-mode design patten" />
+    <MESSAGE value="Add dynamic proxy-command mode" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add dynamic proxy-command mode" />
   </component>
 </project>
