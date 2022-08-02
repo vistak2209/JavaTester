@@ -3,7 +3,7 @@ package org.example.design.generator.fibonacci;
 import java.util.Iterator;
 import java.util.Spliterator;
 import java.util.function.Consumer;
-
+//This is a kind of adaptor mode
 public class IterableFinonacci extends Fibonacci implements Iterable<Integer>{
     private int n;
     public IterableFinonacci(int count){n=count;}
