@@ -1,4 +1,4 @@
-package org.example.design.generator.method;
+package org.example.design.generator.base;
 
 import org.example.design.generator.Generator;
 

@@ -4,11 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1efa4386-b292-4684-867d-f008699461a8" name="Changes" comment="add Generator Method">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/design/generator/method/BaseGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/design/generator/method/BasicGeneratorDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/design/generator/method/CountedObject.java" afterDir="false" />
+    <list default="true" id="1efa4386-b292-4684-867d-f008699461a8" name="Changes" comment="add BaseGenerator">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/design/generator/base/set/Sets.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/design/generator/base/set/WatercolorSets.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/design/generator/base/set/Watercolors.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/design/generator/base/tuple/Tuple.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/design/generator/base/tuple/TupleTest2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/design/generator/method/BaseGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/design/generator/base/BaseGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/design/generator/method/BasicGeneratorDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/design/generator/base/BasicGeneratorDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/design/generator/method/CountedObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/design/generator/base/CountedObject.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +54,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -81,13 +87,13 @@
       <recent name="$PROJECT_DIR$/src/main/java/org/example" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BasicGeneratorDemo">
-    <configuration name="BasicGeneratorDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.design.generator.method.BasicGeneratorDemo" />
+  <component name="RunManager" selected="Application.WatercolorSets">
+    <configuration name="TupleTest2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.design.generator.base.tuple.TupleTest2" />
       <module name="JavaTester.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.design.generator.method.*" />
+          <option name="PATTERN" value="org.example.design.generator.base.tuple.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -95,12 +101,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GeneratorMethods" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.design.generator.method.GeneratorMethods" />
+    <configuration name="WatercolorSets" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.design.generator.base.set.WatercolorSets" />
       <module name="JavaTester.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.design.generator.method.*" />
+          <option name="PATTERN" value="org.example.design.generator.base.set.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -108,12 +114,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Generators" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="org.example.design.generator.base.BasicGeneratorDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.design.generator.base.BasicGeneratorDemo" />
+      <module name="JavaTester.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.design.generator.base.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="org.example.design.generator.method.Generators" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.design.generator.method.Generators" />
       <module name="JavaTester.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.design.generator.method.*" />
+          <option name="PATTERN" value="org.example.design.generator.base.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -121,25 +140,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GenerticVarargs" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="org.example.design.generator.method.GenerticVarargs" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.design.generator.method.GenerticVarargs" />
       <module name="JavaTester.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.design.generator.method.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="IterableFinonacci" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.design.generator.fibonacci.IterableFinonacci" />
-      <module name="JavaTester.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.design.generator.fibonacci.*" />
+          <option name="PATTERN" value="org.example.design.generator.base.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -149,11 +155,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.BasicGeneratorDemo" />
-        <item itemvalue="Application.Generators" />
-        <item itemvalue="Application.GenerticVarargs" />
-        <item itemvalue="Application.GeneratorMethods" />
-        <item itemvalue="Application.IterableFinonacci" />
+        <item itemvalue="Application.WatercolorSets" />
+        <item itemvalue="Application.TupleTest2" />
+        <item itemvalue="Application.org.example.design.generator.base.BasicGeneratorDemo" />
+        <item itemvalue="Application.org.example.design.generator.method.Generators" />
+        <item itemvalue="Application.org.example.design.generator.method.GenerticVarargs" />
       </list>
     </recent_temporary>
   </component>
@@ -229,7 +235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659429833493</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="add BaseGenerator">
+      <created>1659501969646</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1659501969646</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -255,6 +268,7 @@
     <MESSAGE value="Add some generics' examples" />
     <MESSAGE value="add Generator" />
     <MESSAGE value="add Generator Method" />
-    <option name="LAST_COMMIT_MESSAGE" value="add Generator Method" />
+    <MESSAGE value="add BaseGenerator" />
+    <option name="LAST_COMMIT_MESSAGE" value="add BaseGenerator" />
   </component>
 </project>

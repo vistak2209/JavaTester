@@ -1,4 +1,4 @@
-package org.example.design.generator.method;
+package org.example.design.generator.base;
 
 public class CountedObject {
     private static long counter = 0;
