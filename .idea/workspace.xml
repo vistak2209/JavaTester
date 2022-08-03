@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1efa4386-b292-4684-867d-f008699461a8" name="Changes" comment="add Generator">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/design/generator/method/GeneratorMethods.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/design/generator/method/Generators.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/design/generator/method/GenerticVarargs.java" afterDir="false" />
+    <list default="true" id="1efa4386-b292-4684-867d-f008699461a8" name="Changes" comment="add Generator Method">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/design/generator/method/BaseGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/design/generator/method/BasicGeneratorDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/design/generator/method/CountedObject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/design/generator/fibonacci/IterableFinonacci.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/design/generator/fibonacci/IterableFinonacci.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,13 +81,13 @@
       <recent name="$PROJECT_DIR$/src/main/java/org/example" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Generators">
-    <configuration name="Fibonacci" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.design.generator.fibonacci.Fibonacci" />
+  <component name="RunManager" selected="Application.BasicGeneratorDemo">
+    <configuration name="BasicGeneratorDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.design.generator.method.BasicGeneratorDemo" />
       <module name="JavaTester.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.design.generator.fibonacci.*" />
+          <option name="PATTERN" value="org.example.design.generator.method.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -150,11 +149,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BasicGeneratorDemo" />
         <item itemvalue="Application.Generators" />
         <item itemvalue="Application.GenerticVarargs" />
         <item itemvalue="Application.GeneratorMethods" />
         <item itemvalue="Application.IterableFinonacci" />
-        <item itemvalue="Application.Fibonacci" />
       </list>
     </recent_temporary>
   </component>
@@ -223,7 +222,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659399817353</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="add Generator Method">
+      <created>1659429833493</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1659429833493</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -248,6 +254,7 @@
     <MESSAGE value="Add dynamic proxy-command mode" />
     <MESSAGE value="Add some generics' examples" />
     <MESSAGE value="add Generator" />
-    <option name="LAST_COMMIT_MESSAGE" value="add Generator" />
+    <MESSAGE value="add Generator Method" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Generator Method" />
   </component>
 </project>
