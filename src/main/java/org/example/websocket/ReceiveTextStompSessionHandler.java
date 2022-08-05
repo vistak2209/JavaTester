@@ -1,4 +1,4 @@
-package org.example;
+package org.example.websocket;
 
 import org.springframework.messaging.simp.stomp.StompHeaders;
 import org.springframework.messaging.simp.stomp.StompSession;

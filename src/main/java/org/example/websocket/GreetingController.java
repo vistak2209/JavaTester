@@ -1,4 +1,4 @@
-package org.example;
+package org.example.websocket;
 import org.example.pojo.Greeting;
 import org.example.pojo.HelloMessage;
 import org.springframework.messaging.handler.annotation.MessageMapping;
