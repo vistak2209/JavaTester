@@ -4,18 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1efa4386-b292-4684-867d-f008699461a8" name="Changes" comment="add Set-generator">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/design/generator/base/set/ContainerMethodDifferences.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/generics/anonymous/BankTeller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/generics/anonymous/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/generics/anonymous/Teller.java" afterDir="false" />
+    <list default="true" id="1efa4386-b292-4684-867d-f008699461a8" name="Changes" comment="add anonymous">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/design/generator/reflection/CommuteReflectivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/design/generator/reflection/Mime.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/design/generator/reflection/SmartDog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/generics/FourTuple.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/generics/complex/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/generics/complex/TupleList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/GreetingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/websocket/GreetingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ReceiveTextStompClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/websocket/ReceiveTextStompClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ReceiveTextStompSessionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/websocket/ReceiveTextStompSessionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/WebSocketClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/websocket/WebSocketClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/WebSocketConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/websocket/WebSocketConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/WebSocketServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/websocket/WebSocketServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/generics/TupleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/generics/TupleTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,13 +86,26 @@
       <recent name="$PROJECT_DIR$/src/main/java/org/example" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BankTeller">
+  <component name="RunManager" selected="Application.CommuteReflectivity">
     <configuration name="BankTeller" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.generics.anonymous.BankTeller" />
       <module name="JavaTester.main" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.example.generics.anonymous.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CommuteReflectivity" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.design.generator.reflection.CommuteReflectivity" />
+      <module name="JavaTester.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.design.generator.reflection.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -116,12 +126,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TupleTest2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.design.generator.base.tuple.TupleTest2" />
+    <configuration name="TupleList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.generics.complex.TupleList" />
       <module name="JavaTester.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.design.generator.base.tuple.*" />
+          <option name="PATTERN" value="org.example.generics.complex.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -142,26 +152,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="org.example.design.generator.base.BasicGeneratorDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.design.generator.base.BasicGeneratorDemo" />
-      <module name="JavaTester.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.design.generator.base.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CommuteReflectivity" />
+        <item itemvalue="Application.TupleList" />
         <item itemvalue="Application.BankTeller" />
         <item itemvalue="Application.ContainerMethodDifferences" />
         <item itemvalue="Application.WatercolorSets" />
-        <item itemvalue="Application.TupleTest2" />
-        <item itemvalue="Application.org.example.design.generator.base.BasicGeneratorDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -251,7 +248,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659504639140</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="add anonymous">
+      <created>1659658183015</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1659658183016</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -279,6 +283,7 @@
     <MESSAGE value="add Generator Method" />
     <MESSAGE value="add BaseGenerator" />
     <MESSAGE value="add Set-generator" />
-    <option name="LAST_COMMIT_MESSAGE" value="add Set-generator" />
+    <MESSAGE value="add anonymous" />
+    <option name="LAST_COMMIT_MESSAGE" value="add anonymous" />
   </component>
 </project>
