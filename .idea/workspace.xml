@@ -4,13 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1efa4386-b292-4684-867d-f008699461a8" name="Changes" comment="add CommuteReflectivity">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/design/generator/reflection/serial/Apple.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/design/generator/reflection/serial/ApplyTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/design/generator/reflection/serial/FilledList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/design/generator/reflection/serial/Shape.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/design/generator/reflection/serial/SimpleQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/design/generator/reflection/serial/Square.java" afterDir="false" />
+    <list default="true" id="1efa4386-b292-4684-867d-f008699461a8" name="Changes" comment="Serail">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/design/decoration/Basic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/design/decoration/Decoration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/design/decoration/Decorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/design/decoration/DynamicProxyMixin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/design/decoration/MixinProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/design/decoration/SerialNumbered.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/design/decoration/TimeStamped.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,7 +74,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/home/denny/IdeaProjects/JavaTester",
+    "last_opened_file_path": "/home/denny/IdeaProjects/omnistor-deployer-server-suite",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -85,7 +86,7 @@
       <recent name="$PROJECT_DIR$/src/main/java/org/example" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ApplyTest">
+  <component name="RunManager" selected="Application.Decoration">
     <configuration name="ApplyTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.design.generator.reflection.serial.ApplyTest" />
       <module name="JavaTester.main" />
@@ -125,12 +126,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ContainerMethodDifferences" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.design.generator.base.set.ContainerMethodDifferences" />
+    <configuration name="Decoration" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.design.decoration.Decoration" />
       <module name="JavaTester.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.design.generator.base.set.*" />
+          <option name="PATTERN" value="org.example.design.decoration.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -153,11 +154,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Decoration" />
         <item itemvalue="Application.ApplyTest" />
         <item itemvalue="Application.CommuteReflectivity" />
         <item itemvalue="Application.TupleList" />
         <item itemvalue="Application.BankTeller" />
-        <item itemvalue="Application.ContainerMethodDifferences" />
       </list>
     </recent_temporary>
   </component>
@@ -261,7 +262,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659935139413</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Serail">
+      <created>1660004698508</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1660004698508</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -291,6 +299,7 @@
     <MESSAGE value="add Set-generator" />
     <MESSAGE value="add anonymous" />
     <MESSAGE value="add CommuteReflectivity" />
-    <option name="LAST_COMMIT_MESSAGE" value="add CommuteReflectivity" />
+    <MESSAGE value="Serail" />
+    <option name="LAST_COMMIT_MESSAGE" value="Serail" />
   </component>
 </project>
