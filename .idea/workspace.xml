@@ -4,15 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1efa4386-b292-4684-867d-f008699461a8" name="Changes" comment="Serail">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/design/decoration/Basic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/design/decoration/Decoration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/design/decoration/Decorator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/design/decoration/DynamicProxyMixin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/design/decoration/MixinProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/design/decoration/SerialNumbered.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/design/decoration/TimeStamped.java" afterDir="false" />
+    <list default="true" id="1efa4386-b292-4684-867d-f008699461a8" name="Changes" comment="Decorator mode">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/design/mixtype/Basic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/design/mixtype/Mixin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/design/mixtype/Mixins.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/design/mixtype/SerialNumbered.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/design/mixtype/TimeStamped.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/design/decoration/Basic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/design/mixtype/BasicImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/design/decoration/Decoration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/design/decoration/Decorator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/design/decoration/SerialNumbered.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/design/mixtype/SerialNumberedImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/design/decoration/TimeStamped.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/design/mixtype/TimeStampedImp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,42 +73,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/home/denny/IdeaProjects/omnistor-deployer-server-suite",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/denny/IdeaProjects/omnistor-odt-ci-controller&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/org/example" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Decoration">
+  <component name="RunManager" selected="Application.org.example.design.mixtype.Mixins">
     <configuration name="ApplyTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.design.generator.reflection.serial.ApplyTest" />
       <module name="JavaTester.main" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.example.design.generator.reflection.serial.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BankTeller" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.generics.anonymous.BankTeller" />
-      <module name="JavaTester.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.generics.anonymous.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -131,7 +121,20 @@
       <module name="JavaTester.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.design.decoration.*" />
+          <option name="PATTERN" value="org.example.design.mixtype.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Mixins" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.design.mixtype.Mixins" />
+      <module name="JavaTester.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.design.mixtype.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -154,11 +157,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Decoration" />
+        <item itemvalue="Application.org.example.design.mixtype.Mixins" />
+        <item itemvalue="Application.org.example.design.decoration.Decoration" />
         <item itemvalue="Application.ApplyTest" />
         <item itemvalue="Application.CommuteReflectivity" />
         <item itemvalue="Application.TupleList" />
-        <item itemvalue="Application.BankTeller" />
       </list>
     </recent_temporary>
   </component>
@@ -269,7 +272,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660004698508</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Decorator mode">
+      <created>1660091154312</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1660091154312</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -300,6 +310,7 @@
     <MESSAGE value="add anonymous" />
     <MESSAGE value="add CommuteReflectivity" />
     <MESSAGE value="Serail" />
-    <option name="LAST_COMMIT_MESSAGE" value="Serail" />
+    <MESSAGE value="Decorator mode" />
+    <option name="LAST_COMMIT_MESSAGE" value="Decorator mode" />
   </component>
 </project>

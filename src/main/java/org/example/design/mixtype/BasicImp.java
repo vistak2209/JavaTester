@@ -1,6 +1,6 @@
-package org.example.design.decoration;
+package org.example.design.mixtype;
 
-public class Basic {
+public class BasicImp implements Basic{
     private String value;
     public String get() {
         return value;
