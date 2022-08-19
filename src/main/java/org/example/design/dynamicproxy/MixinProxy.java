@@ -1,4 +1,4 @@
-package org.example.design.decoration;
+package org.example.design.dynamicproxy;
 
 import org.example.generics.TwoTuple;
 
@@ -28,6 +28,7 @@ public class MixinProxy implements InvocationHandler {
         Object delegate = delegatesByMethod.get(methodName);
         return method.invoke(delegate,args);
     }
+    @SuppressWarnings("unchecked")
     public static Object newInstance(TwoTuple... pairs){
         Class[] interfaces = new Class[pairs.length];
         for(int i=0;i<pairs.length;i++){

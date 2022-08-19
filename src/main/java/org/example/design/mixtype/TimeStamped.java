@@ -2,6 +2,6 @@ package org.example.design.mixtype;
 
 import java.util.Date;
 
-interface TimeStamped  {
+public interface TimeStamped  {
     long getStamp();
 }

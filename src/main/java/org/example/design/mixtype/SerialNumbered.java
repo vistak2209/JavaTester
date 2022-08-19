@@ -1,5 +1,5 @@
 package org.example.design.mixtype;
 
-interface SerialNumbered{
+public interface SerialNumbered{
     long getSerialNumber();
 }
