@@ -11,10 +11,12 @@ import java.util.Map;
 public class MixinProxy implements InvocationHandler {
     Map<String,Object> delegatesByMethod;
     public MixinProxy(TwoTuple<Object,Class<?>>... pairs){
+        System.out.println("constructing");
         delegatesByMethod = new HashMap<String, Object>();
         for(TwoTuple<Object,Class<?>> pair:pairs){
             for(Method method:pair.second.getMethods()){
                 String methodName = method.getName();
+                System.out.println("methodName: "+methodName);
                 if(!delegatesByMethod.containsKey(methodName)){
                     delegatesByMethod.put(methodName,pair.first);
                 }
@@ -32,6 +34,7 @@ public class MixinProxy implements InvocationHandler {
     public static Object newInstance(TwoTuple... pairs){
         Class[] interfaces = new Class[pairs.length];
         for(int i=0;i<pairs.length;i++){
+            System.out.println("newInstance--> "+pairs[i].second.getClass().getName());
             interfaces[i]=(Class) pairs[i].second;
         }
         ClassLoader c1 = pairs[0].first.getClass().getClassLoader();

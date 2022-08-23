@@ -4,17 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1efa4386-b292-4684-867d-f008699461a8" name="Changes" comment="add mixtype">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/design/decoration/Basic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/design/decoration/Decoration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/design/decoration/Decorator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/design/decoration/SerialNumbered.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/design/decoration/TimeStamped.java" afterDir="false" />
+    <list default="true" id="1efa4386-b292-4684-867d-f008699461a8" name="Changes" comment="add dynamic proxy mode">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/annotations/PasswordUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/annotations/UseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/annotations/UseCaseTracker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/design/decoration/DynamicProxyMixin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/design/dynamicproxy/DynamicProxyMixin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/design/decoration/MixinProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/design/dynamicproxy/MixinProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/design/mixtype/SerialNumbered.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/design/mixtype/SerialNumbered.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/design/mixtype/TimeStamped.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/design/mixtype/TimeStamped.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/design/dynamicproxy/MixinProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/design/dynamicproxy/MixinProxy.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +51,7 @@
       <list>
         <option value="Interface" />
         <option value="Enum" />
+        <option value="AnnotationType" />
         <option value="Class" />
       </list>
     </option>
@@ -72,24 +68,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/home/denny/IdeaProjects/JavaTester/src/main/java/org/example/design/decoration",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/denny/IdeaProjects/JavaTester&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/org/example/design/decoration" />
       <recent name="$PROJECT_DIR$/src/main/java/org/example" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DynamicProxyMixin">
+  <component name="RunManager" selected="Application.UseCaseTracker">
     <configuration name="ApplyTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.design.generator.reflection.serial.ApplyTest" />
       <module name="JavaTester.main" />
@@ -109,19 +105,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.example.design.generator.reflection.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Decoration" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.design.decoration.Decoration" />
-      <module name="JavaTester.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.design.mixtype.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -155,11 +138,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UseCaseTracker" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.annotations.UseCaseTracker" />
+      <module name="JavaTester.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.annotations.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.UseCaseTracker" />
         <item itemvalue="Application.DynamicProxyMixin" />
-        <item itemvalue="Application.org.example.design.mixtype.Mixins" />
-        <item itemvalue="Application.org.example.design.decoration.Decoration" />
         <item itemvalue="Application.ApplyTest" />
         <item itemvalue="Application.CommuteReflectivity" />
       </list>
@@ -286,7 +281,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660782076094</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="add dynamic proxy mode">
+      <created>1660867379644</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1660867379644</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -319,6 +321,7 @@
     <MESSAGE value="Serail" />
     <MESSAGE value="Decorator mode" />
     <MESSAGE value="add mixtype" />
-    <option name="LAST_COMMIT_MESSAGE" value="add mixtype" />
+    <MESSAGE value="add dynamic proxy mode" />
+    <option name="LAST_COMMIT_MESSAGE" value="add dynamic proxy mode" />
   </component>
 </project>
