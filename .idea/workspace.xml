@@ -4,12 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1efa4386-b292-4684-867d-f008699461a8" name="Changes" comment="add dynamic proxy mode">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/annotations/PasswordUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/annotations/UseCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/annotations/UseCaseTracker.java" afterDir="false" />
+    <list default="true" id="1efa4386-b292-4684-867d-f008699461a8" name="Changes" comment="add annotations example">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/annotations/field/BuildTagDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/annotations/field/HttpParameterFieldProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/annotations/field/HttpParameters.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/annotations/field/main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/jenkins/HttpResponseObj.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/jenkins/JenkinsQueueInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/jenkins/JenkinsTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/jenkins/JenkinsTrigger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/jenkins/JsonUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/design/dynamicproxy/MixinProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/design/dynamicproxy/MixinProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,43 +74,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/denny/IdeaProjects/JavaTester&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/home/denny/IdeaProjects/git-tag-test",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/org/example/design/decoration" />
       <recent name="$PROJECT_DIR$/src/main/java/org/example" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.example.annotations.field" />
+      <recent name="org.example.jenkins" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.UseCaseTracker">
+  <component name="RunManager" selected="Application.main">
     <configuration name="ApplyTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.design.generator.reflection.serial.ApplyTest" />
       <module name="JavaTester.main" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.example.design.generator.reflection.serial.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CommuteReflectivity" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.design.generator.reflection.CommuteReflectivity" />
-      <module name="JavaTester.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.design.generator.reflection.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -125,12 +122,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Mixins" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.design.mixtype.Mixins" />
+    <configuration name="JenkinsTrigger" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.jenkins.JenkinsTrigger" />
       <module name="JavaTester.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.design.mixtype.*" />
+          <option name="PATTERN" value="org.example.jenkins.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -151,12 +148,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.annotations.field.main" />
+      <module name="JavaTester.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.annotations.field.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.main" />
+        <item itemvalue="Application.JenkinsTrigger" />
         <item itemvalue="Application.UseCaseTracker" />
         <item itemvalue="Application.DynamicProxyMixin" />
         <item itemvalue="Application.ApplyTest" />
-        <item itemvalue="Application.CommuteReflectivity" />
       </list>
     </recent_temporary>
   </component>
@@ -288,7 +299,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660867379644</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="add annotations example">
+      <created>1661213196435</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1661213196435</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -322,6 +340,7 @@
     <MESSAGE value="Decorator mode" />
     <MESSAGE value="add mixtype" />
     <MESSAGE value="add dynamic proxy mode" />
-    <option name="LAST_COMMIT_MESSAGE" value="add dynamic proxy mode" />
+    <MESSAGE value="add annotations example" />
+    <option name="LAST_COMMIT_MESSAGE" value="add annotations example" />
   </component>
 </project>
