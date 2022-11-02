@@ -48,14 +48,22 @@ class TestCase {
 
 }
 class Solution {
+    /*
+    * Runtime: 1344 ms, faster than 5.00% of Java online submissions for Longest Palindromic Substring.
+    * Memory Usage: 279.2 MB, less than 5.94% of Java online submissions for Longest Palindromic Substring.
+    * */
     public String longestPalindrome(String s) {
         List<String> condidates = new LinkedList<>();
         String answer = "";
         Stack<Character>charStack=new Stack<>();
         char[] cList = s.toCharArray();
+        if(cList.length==1)return s;
+        if(cList.length==2 && cList[0]==cList[1] )return s;
+        else if(cList.length==2) return ""+cList[0];
         for(int i=0;i<cList.length;i++){
             //--------odd------------------
             String sub_p=cList[i]+"";
+
             int j =1;
             while(i-j>=0 && i+j!= cList.length){
                 if(cList[i-j]==cList[i+j]){
@@ -86,11 +94,14 @@ class Solution {
 
 
         }
-
+        if(condidates.size()==0)return ""+cList[0];
         for(String condidate:condidates){
             if(condidate.length()>answer.length()){answer=condidate;}
         }
+
         return answer;
+
+
 
     }
 }
