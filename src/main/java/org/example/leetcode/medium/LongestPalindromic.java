@@ -49,8 +49,12 @@ class TestCase {
 }
 class Solution {
     /*
+    * -----------Using String append Version-------------
     * Runtime: 1344 ms, faster than 5.00% of Java online submissions for Longest Palindromic Substring.
     * Memory Usage: 279.2 MB, less than 5.94% of Java online submissions for Longest Palindromic Substring.
+    * -----------Using StringBuffer Version--------------
+    * Runtime: 272 ms, faster than 27.51% of Java online submissions for Longest Palindromic Substring.
+    * Memory Usage: 68.5 MB, less than 25.10% of Java online submissions for Longest Palindromic Substring.
     * */
     public String longestPalindrome(String s) {
         List<String> condidates = new LinkedList<>();
@@ -62,35 +66,36 @@ class Solution {
         else if(cList.length==2) return ""+cList[0];
         for(int i=0;i<cList.length;i++){
             //--------odd------------------
-            String sub_p=cList[i]+"";
-
+            StringBuffer buffer = new StringBuffer();
+            buffer.append(cList[i]+"");
             int j =1;
             while(i-j>=0 && i+j!= cList.length){
                 if(cList[i-j]==cList[i+j]){
-                    sub_p+=cList[i+j];
-                    sub_p= cList[i-j]+sub_p;
+                    buffer.append(cList[i+j]);
+                    buffer.insert(0,cList[i-j]);
                     j++;
                 } else {
                     break;
                 }
             }
-            if(sub_p.length()>1){condidates.add(sub_p);}
+            if(buffer.length()>1){condidates.add(buffer.toString());}
 
 
-            sub_p="";
+            buffer = new StringBuffer();
             j =1;
             int k =0;
             while(i-k>=0 && i+j!= cList.length){
                 if(cList[i-k]==cList[i+j]){
-                    sub_p+=cList[i+j];
-                    sub_p= cList[i-k]+sub_p;
+
+                    buffer.append(cList[i+j]);
+                    buffer.insert(0,cList[i-k]);
                     j++;
                     k++;
                 } else {
                     break;
                 }
             }
-            if(sub_p.length()>1){condidates.add(sub_p);}
+            if(buffer.length()>1){condidates.add(buffer.toString());}
 
 
         }
