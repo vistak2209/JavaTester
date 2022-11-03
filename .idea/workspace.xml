@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1efa4386-b292-4684-867d-f008699461a8" name="Changes" comment="longestPalindrome.&#10;Solution 1[Using StringBuffer Version]">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="1efa4386-b292-4684-867d-f008699461a8" name="Changes" comment="[longestPalindrome]&#10;Using index and return subString-">
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/leetcode/medium/LongestPalindromic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/leetcode/medium/LongestPalindromic.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -65,17 +64,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/home/denny/IdeaProjects/JavaTester",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/denny/IdeaProjects/JavaTester&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/org/example/design/decoration" />
@@ -325,7 +324,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667348466184</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="[longestPalindrome]&#10;Using index and return subString-">
+      <created>1667433725063</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1667433725063</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -364,6 +370,7 @@
     <MESSAGE value="add longestPalindrome.&#10;&#10;Add Solution 1" />
     <MESSAGE value="longestPalindrome.&#10;Solution 1 first version" />
     <MESSAGE value="longestPalindrome.&#10;Solution 1[Using StringBuffer Version]" />
-    <option name="LAST_COMMIT_MESSAGE" value="longestPalindrome.&#10;Solution 1[Using StringBuffer Version]" />
+    <MESSAGE value="[longestPalindrome]&#10;Using index and return subString-" />
+    <option name="LAST_COMMIT_MESSAGE" value="[longestPalindrome]&#10;Using index and return subString-" />
   </component>
 </project>

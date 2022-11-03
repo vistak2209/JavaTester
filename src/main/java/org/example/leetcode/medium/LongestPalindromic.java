@@ -109,22 +109,22 @@ class Solution {
     * ----------Using index and return subString------------------------
     * Runtime: 28 ms, faster than 82.60% of Java online submissions for Longest Palindromic Substring.
     * Memory Usage: 42.9 MB, less than 64.79% of Java online submissions for Longest Palindromic Substring.
+    * ----------don't covert charArray----------------------------------
+    * Runtime: 22 ms, faster than 91.63% of Java online submissions for Longest Palindromic Substring.
+    * Memory Usage: 41.9 MB, less than 95.88% of Java online submissions for Longest Palindromic Substring.
     * */
     public String longestPalindrome(String s) {
 
         int startIndex=0;
         int endIndex=0;
-        char[] cList = s.toCharArray();
-        if(cList.length==1)return s;
-        if(cList.length==2 && cList[0]==cList[1] )return s;
-        else if(cList.length==2) return ""+cList[0];
-        for(int i=0;i<cList.length;i++){
+        int sSize=s.length();
+        for(int i=0;i<sSize;i++){
             //--------odd------------------
             int j =1;
             int left=0;
             int right=0;
-            while(i-j>=0 && i+j!= cList.length){
-                if(cList[i-j]==cList[i+j]){
+            while(i-j>=0 && i+j!= sSize){
+                if(s.charAt(i-j)==s.charAt(i+j)){
                     left=i-j;
                     right=i+j;
                     j++;
@@ -137,8 +137,8 @@ class Solution {
             int k =0;
             left=0;
             right=0;
-            while(i-k>=0 && i+j!= cList.length){
-                if(cList[i-k]==cList[i+j]){
+            while(i-k>=0 && i+j!= sSize){
+                if(s.charAt(i-k)==s.charAt(i+j)){
                     left=i-k;
                     right=i+j;
                     j++;
