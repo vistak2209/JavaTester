@@ -47,6 +47,53 @@ class TestCase {
 
 
 }
+class SimpleSolution {
+    private int lo, maxLen;
+    public String longestPalindrome(String s) {
+        int len = s.length();
+        if (len < 2)
+            return s;
+        for (int i = 0; i < len-1; i++) {
+            extendPalindrome(s, i, i);  //assume odd length, try to extend Palindrome as possible
+            extendPalindrome(s, i, i+1); //assume even length.
+        }
+        return s.substring(lo, lo + maxLen);
+    }
+    private void extendPalindrome(String s, int j, int k) {
+        while (j >= 0 && k < s.length() && s.charAt(j) == s.charAt(k)) {
+            j--;
+            k++;
+        }
+        if (maxLen < k - j - 1) {
+            lo = j + 1;
+            maxLen = k - j - 1;
+        }
+    }}
+class OfficialSolution {
+    public String longestPalindrome(String s) {
+        if (s == null || s.length() < 1) return "";
+        int start = 0, end = 0;
+        for (int i = 0; i < s.length(); i++) {
+            int len1 = expandAroundCenter(s, i, i);
+            int len2 = expandAroundCenter(s, i, i + 1);
+            int len = Math.max(len1, len2);
+            if (len > end - start) {
+                start = i - (len - 1) / 2;
+                end = i + len / 2;
+            }
+        }
+        return s.substring(start, end + 1);
+    }
+
+    private int expandAroundCenter(String s, int left, int right) {
+        int L = left, R = right;
+        while (L >= 0 && R < s.length() && s.charAt(L) == s.charAt(R)) {
+            L--;
+            R++;
+        }
+        return R - L - 1;
+    }
+}
 class Solution {
     /*
     * -----------Using String append Version-------------
@@ -55,58 +102,55 @@ class Solution {
     * -----------Using StringBuffer Version--------------
     * Runtime: 272 ms, faster than 27.51% of Java online submissions for Longest Palindromic Substring.
     * Memory Usage: 68.5 MB, less than 25.10% of Java online submissions for Longest Palindromic Substring.
+    * -----------Using StringBuffer Version override answer--------------
+    * Runtime: 194 ms, faster than 33.67% of Java online submissions for Longest Palindromic Substring.
+    * Memory Usage: 42.7 MB, less than 69.77% of Java online submissions for Longest Palindromic Substring.
+    * Next challenges:
+    * ----------Using index and return subString------------------------
+    * Runtime: 28 ms, faster than 82.60% of Java online submissions for Longest Palindromic Substring.
+    * Memory Usage: 42.9 MB, less than 64.79% of Java online submissions for Longest Palindromic Substring.
     * */
     public String longestPalindrome(String s) {
-        List<String> condidates = new LinkedList<>();
-        String answer = "";
-        Stack<Character>charStack=new Stack<>();
+
+        int startIndex=0;
+        int endIndex=0;
         char[] cList = s.toCharArray();
         if(cList.length==1)return s;
         if(cList.length==2 && cList[0]==cList[1] )return s;
         else if(cList.length==2) return ""+cList[0];
         for(int i=0;i<cList.length;i++){
             //--------odd------------------
-            StringBuffer buffer = new StringBuffer();
-            buffer.append(cList[i]+"");
             int j =1;
+            int left=0;
+            int right=0;
             while(i-j>=0 && i+j!= cList.length){
                 if(cList[i-j]==cList[i+j]){
-                    buffer.append(cList[i+j]);
-                    buffer.insert(0,cList[i-j]);
+                    left=i-j;
+                    right=i+j;
                     j++;
                 } else {
                     break;
                 }
             }
-            if(buffer.length()>1){condidates.add(buffer.toString());}
-
-
-            buffer = new StringBuffer();
+            if(((right)-(left))>(endIndex-startIndex)){startIndex=left;endIndex=right;}
             j =1;
             int k =0;
+            left=0;
+            right=0;
             while(i-k>=0 && i+j!= cList.length){
                 if(cList[i-k]==cList[i+j]){
-
-                    buffer.append(cList[i+j]);
-                    buffer.insert(0,cList[i-k]);
+                    left=i-k;
+                    right=i+j;
                     j++;
                     k++;
                 } else {
                     break;
                 }
             }
-            if(buffer.length()>1){condidates.add(buffer.toString());}
+            if(((right)-(left))>(endIndex-startIndex)){startIndex=left;endIndex=right;}
 
 
         }
-        if(condidates.size()==0)return ""+cList[0];
-        for(String condidate:condidates){
-            if(condidate.length()>answer.length()){answer=condidate;}
-        }
-
-        return answer;
-
-
-
+        return s.substring(startIndex,endIndex+1);
     }
 }
