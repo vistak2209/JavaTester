@@ -1,5 +1,6 @@
 package org.example.leetcode.medium;
 
+import java.awt.*;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Stack;
@@ -21,12 +22,14 @@ public class LongestPalindromic {
     {
         List<TestCase> testCaseList = new LinkedList<>();
         testCaseList.add(new TestCase("weqwbaabad","baab"));
+        testCaseList.add(new TestCase("1baabad","baab"));
         testCaseList.add(new TestCase("baabad","baab"));
-        testCaseList.add(new TestCase("babad","bab"));
+        testCaseList.add(new TestCase("babaj","bab"));
         testCaseList.add(new TestCase("cbbd","bb"));
         testCaseList.add(new TestCase("444ccaseess7sseesacc123","ccaseess7sseesacc"));
         Solution solution = new Solution();
         for(TestCase testCase:testCaseList){
+            solution = new Solution();
             String output = solution.longestPalindrome(testCase.test);
             if(!testCase.checkAnswer(output)){
                 System.out.println("answer: "+output+" for the test :"+testCase.test+" is wrong");
@@ -95,7 +98,7 @@ class OfficialSolution {
     }
 }
 class Solution {
-    /*
+    /* ###################Sliding Window###################
     * -----------Using String append Version-------------
     * Runtime: 1344 ms, faster than 5.00% of Java online submissions for Longest Palindromic Substring.
     * Memory Usage: 279.2 MB, less than 5.94% of Java online submissions for Longest Palindromic Substring.
@@ -105,51 +108,38 @@ class Solution {
     * -----------Using StringBuffer Version override answer--------------
     * Runtime: 194 ms, faster than 33.67% of Java online submissions for Longest Palindromic Substring.
     * Memory Usage: 42.7 MB, less than 69.77% of Java online submissions for Longest Palindromic Substring.
-    * Next challenges:
     * ----------Using index and return subString------------------------
     * Runtime: 28 ms, faster than 82.60% of Java online submissions for Longest Palindromic Substring.
     * Memory Usage: 42.9 MB, less than 64.79% of Java online submissions for Longest Palindromic Substring.
     * ----------don't covert charArray----------------------------------
     * Runtime: 22 ms, faster than 91.63% of Java online submissions for Longest Palindromic Substring.
     * Memory Usage: 41.9 MB, less than 95.88% of Java online submissions for Longest Palindromic Substring.
+    * ----------divide into two method----------------------------------
+    * Runtime: 28 ms, faster than 82.68% of Java online submissions for Longest Palindromic Substring.
+    * Memory Usage: 42.9 MB, less than 64.62% of Java online submissions for Longest Palindromic Substring.
     * */
+    int startIndex=0;
+    int endIndex=0;
+    int sSize=0;
+    private void extendPalindrome(int anchor,int shift,String s){
+        int left = anchor;
+        int right= anchor+shift;
+        if(left<0||right>=sSize)return;
+        if(!(s.charAt(left)==s.charAt(right)))return;
+        while((left-1>=0 && right+1<sSize) && s.charAt(left-1)==s.charAt(right+1)){
+            left--;
+            right++;
+        }
+        if((right-left)>(endIndex-startIndex)){
+            startIndex=left;
+            endIndex=right;
+        }
+    }
     public String longestPalindrome(String s) {
-
-        int startIndex=0;
-        int endIndex=0;
-        int sSize=s.length();
+        sSize=s.length();
         for(int i=0;i<sSize;i++){
-            //--------odd------------------
-            int j =1;
-            int left=0;
-            int right=0;
-            while(i-j>=0 && i+j!= sSize){
-                if(s.charAt(i-j)==s.charAt(i+j)){
-                    left=i-j;
-                    right=i+j;
-                    j++;
-                } else {
-                    break;
-                }
-            }
-            if(((right)-(left))>(endIndex-startIndex)){startIndex=left;endIndex=right;}
-            j =1;
-            int k =0;
-            left=0;
-            right=0;
-            while(i-k>=0 && i+j!= sSize){
-                if(s.charAt(i-k)==s.charAt(i+j)){
-                    left=i-k;
-                    right=i+j;
-                    j++;
-                    k++;
-                } else {
-                    break;
-                }
-            }
-            if(((right)-(left))>(endIndex-startIndex)){startIndex=left;endIndex=right;}
-
-
+            extendPalindrome(i,1,s);
+            extendPalindrome(i,0,s);
         }
         return s.substring(startIndex,endIndex+1);
     }

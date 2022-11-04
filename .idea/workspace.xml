@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1efa4386-b292-4684-867d-f008699461a8" name="Changes" comment="[longestPalindrome]&#10;Using index and return subString-">
+    <list default="true" id="1efa4386-b292-4684-867d-f008699461a8" name="Changes" comment="[longestPalindrome]&#10;don't covert charArray">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/leetcode/medium/LongestPalindromic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/leetcode/medium/LongestPalindromic.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -331,7 +332,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667433725063</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="[longestPalindrome]&#10;don't covert charArray">
+      <created>1667433948846</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1667433948846</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -371,6 +379,7 @@
     <MESSAGE value="longestPalindrome.&#10;Solution 1 first version" />
     <MESSAGE value="longestPalindrome.&#10;Solution 1[Using StringBuffer Version]" />
     <MESSAGE value="[longestPalindrome]&#10;Using index and return subString-" />
-    <option name="LAST_COMMIT_MESSAGE" value="[longestPalindrome]&#10;Using index and return subString-" />
+    <MESSAGE value="[longestPalindrome]&#10;don't covert charArray" />
+    <option name="LAST_COMMIT_MESSAGE" value="[longestPalindrome]&#10;don't covert charArray" />
   </component>
 </project>
