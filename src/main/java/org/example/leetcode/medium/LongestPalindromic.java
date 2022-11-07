@@ -1,5 +1,7 @@
 package org.example.leetcode.medium;
 
+import org.example.leetcode.TestCase;
+
 import java.awt.*;
 import java.util.LinkedList;
 import java.util.List;
@@ -37,19 +39,7 @@ public class LongestPalindromic {
         }
     }
 }
-class TestCase {
-    String test;
-    String answer;
-    TestCase( String test,String answer){
-        this.test   = test;
-        this.answer = answer;
-    }
-    boolean checkAnswer(String answer){
-        return answer.equals(this.answer);
-    }
 
-
-}
 class SimpleSolution {
     private int lo, maxLen;
     public String longestPalindrome(String s) {

@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1efa4386-b292-4684-867d-f008699461a8" name="Changes" comment="[longestPalindrome]&#10;don't covert charArray">
+    <list default="true" id="1efa4386-b292-4684-867d-f008699461a8" name="Changes" comment="[longestPalindrome]&#10;divide into two method">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/leetcode/TestCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/leetcode/hard/ShortestPalindrome.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/leetcode/medium/LongestPalindromic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/leetcode/medium/LongestPalindromic.java" afterDir="false" />
     </list>
@@ -86,20 +88,7 @@
       <recent name="org.example.jenkins" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LongestPalindromic">
-    <configuration name="JenkinsTrigger" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.jenkins.JenkinsTrigger" />
-      <module name="JavaTester.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.jenkins.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.ShortestPalindrome">
     <configuration name="LongestPalindromic" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.leetcode.medium.LongestPalindromic" />
       <module name="JavaTester.main" />
@@ -139,6 +128,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ShortestPalindrome" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.leetcode.hard.ShortestPalindrome" />
+      <module name="JavaTester.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.leetcode.hard.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.annotations.field.main" />
       <module name="JavaTester.main" />
@@ -154,11 +156,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ShortestPalindrome" />
         <item itemvalue="Application.LongestPalindromic" />
         <item itemvalue="Application.RegexTest" />
         <item itemvalue="Application.Request" />
         <item itemvalue="Application.main" />
-        <item itemvalue="Application.JenkinsTrigger" />
       </list>
     </recent_temporary>
   </component>
@@ -339,7 +341,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667433948846</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="[longestPalindrome]&#10;divide into two method">
+      <created>1667521141761</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1667521141761</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -380,6 +389,7 @@
     <MESSAGE value="longestPalindrome.&#10;Solution 1[Using StringBuffer Version]" />
     <MESSAGE value="[longestPalindrome]&#10;Using index and return subString-" />
     <MESSAGE value="[longestPalindrome]&#10;don't covert charArray" />
-    <option name="LAST_COMMIT_MESSAGE" value="[longestPalindrome]&#10;don't covert charArray" />
+    <MESSAGE value="[longestPalindrome]&#10;divide into two method" />
+    <option name="LAST_COMMIT_MESSAGE" value="[longestPalindrome]&#10;divide into two method" />
   </component>
 </project>
