@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1efa4386-b292-4684-867d-f008699461a8" name="Changes" comment="[longestPalindrome]&#10;divide into two method">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/leetcode/TestCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/leetcode/hard/ShortestPalindrome.java" afterDir="false" />
+    <list default="true" id="1efa4386-b292-4684-867d-f008699461a8" name="Changes" comment="[ShortestPalindrome]&#10;add version">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/leetcode/medium/LongestPalindromic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/leetcode/medium/LongestPalindromic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/leetcode/hard/ShortestPalindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/leetcode/hard/ShortestPalindrome.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,17 +65,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/denny/IdeaProjects/JavaTester&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/home/denny/IdeaProjects/JavaTester",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/org/example/design/decoration" />
@@ -348,7 +346,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667521141761</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="[ShortestPalindrome]&#10;add version">
+      <created>1667791955034</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1667791955034</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -365,7 +370,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="backup20220725" />
     <MESSAGE value="Add proxy mode" />
     <MESSAGE value="Add MethodSelector" />
     <MESSAGE value="Add NullHandler" />
@@ -390,6 +394,7 @@
     <MESSAGE value="[longestPalindrome]&#10;Using index and return subString-" />
     <MESSAGE value="[longestPalindrome]&#10;don't covert charArray" />
     <MESSAGE value="[longestPalindrome]&#10;divide into two method" />
-    <option name="LAST_COMMIT_MESSAGE" value="[longestPalindrome]&#10;divide into two method" />
+    <MESSAGE value="[ShortestPalindrome]&#10;add version" />
+    <option name="LAST_COMMIT_MESSAGE" value="[ShortestPalindrome]&#10;add version" />
   </component>
 </project>

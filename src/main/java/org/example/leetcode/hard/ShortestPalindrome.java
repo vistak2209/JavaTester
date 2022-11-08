@@ -23,6 +23,7 @@ public class ShortestPalindrome {
         List<TestCase> testCaseList = new LinkedList<>();
         testCaseList.add(new TestCase("aacecaaa","aaacecaaa"));
         testCaseList.add(new TestCase("abcd","dcbabcd"));
+        testCaseList.add(new TestCase("abbacd","dcabbacd"));
 
         for(TestCase testCase:testCaseList){
             MySolution solution = new MySolution();
@@ -36,6 +37,12 @@ public class ShortestPalindrome {
     }
 
 }
+/*
+*==============Sliding Window===================
+* ---------string buffer----------------------
+* Time Limit Exceeded
+*
+* */
 class MySolution {
     private boolean extendPalindrome(StringBuffer buffer ){
         int len =buffer.length()-1;
@@ -51,8 +58,8 @@ class MySolution {
         }
         int index=1;
         while(!extendPalindrome(buffer)){
-            buffer.insert(0,buffer.charAt(index));
-            index+=2;
+            buffer.insert(index-1,buffer.charAt(buffer.length()-index));
+            index++;
         }
 
         return buffer.toString();
