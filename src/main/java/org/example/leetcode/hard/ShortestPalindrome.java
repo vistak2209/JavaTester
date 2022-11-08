@@ -16,7 +16,33 @@ Output: "aaacecaaa"
 Example 2:
 Input: s = "abcd"
 Output: "dcbabcd"
+
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 */
+/*
+* class Solution {
+public:
+    string shortestPalindrome(string s) {
+        int n = s.size();
+        string rev(s);
+        reverse(rev.begin(), rev.end());
+        string s_new = s + "#" + rev;
+        int n_new = s_new.size();
+        vector<int> f(n_new, 0);
+        for (int i = 1; i < n_new; i++) {
+            int t = f[i - 1];
+            while (t > 0 && s_new[i] != s_new[t]) {
+                t = f[t - 1];
+            }
+            if (s_new[i] == s_new[t]) {
+                ++t;
+            }
+            f[i] = t;
+        }
+        return rev.substr(0, n - f[n_new - 1]) + s;
+    }
+};
+* */
 public class ShortestPalindrome {
     public static void main(String[] args)
     {
@@ -24,6 +50,7 @@ public class ShortestPalindrome {
         testCaseList.add(new TestCase("aacecaaa","aaacecaaa"));
         testCaseList.add(new TestCase("abcd","dcbabcd"));
         testCaseList.add(new TestCase("abbacd","dcabbacd"));
+        //testCaseList.add(new TestCase("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa","aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"));
 
         for(TestCase testCase:testCaseList){
             MySolution solution = new MySolution();
@@ -41,12 +68,12 @@ public class ShortestPalindrome {
 *==============Sliding Window===================
 * ---------string buffer----------------------
 * Time Limit Exceeded
-*
+*---------add margin----------------------
 * */
 class MySolution {
-    private boolean extendPalindrome(StringBuffer buffer ){
+    private boolean extendPalindrome(StringBuffer buffer ,int margen){
         int len =buffer.length()-1;
-        for(int i=0;i<len;i++){
+        for(int i=margen;i<len-1;i++){
             if(buffer.charAt(i)!=buffer.charAt(len-i))return false;
         }
         return true;
@@ -57,7 +84,8 @@ class MySolution {
             buffer.append(c);
         }
         int index=1;
-        while(!extendPalindrome(buffer)){
+
+        while(!extendPalindrome(buffer,index-1)){
             buffer.insert(index-1,buffer.charAt(buffer.length()-index));
             index++;
         }
