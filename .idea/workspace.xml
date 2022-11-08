@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1efa4386-b292-4684-867d-f008699461a8" name="Changes" comment="[ShortestPalindrome]&#10;Sliding Window&#10;string buffer">
+    <list default="true" id="1efa4386-b292-4684-867d-f008699461a8" name="Changes" comment="[ShortestPalindrome]&#10;add margin">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/leetcode/hard/ShortestPalindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/leetcode/hard/ShortestPalindrome.java" afterDir="false" />
     </list>
@@ -360,7 +360,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667865706779</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="[ShortestPalindrome]&#10;add margin">
+      <created>1667866377639</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1667866377639</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -377,7 +384,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Add MethodSelector" />
     <MESSAGE value="Add NullHandler" />
     <MESSAGE value="Add command-mode design patten" />
     <MESSAGE value="Add dynamic proxy-command mode" />
@@ -402,6 +408,7 @@
     <MESSAGE value="[longestPalindrome]&#10;divide into two method" />
     <MESSAGE value="[ShortestPalindrome]&#10;add version" />
     <MESSAGE value="[ShortestPalindrome]&#10;Sliding Window&#10;string buffer" />
-    <option name="LAST_COMMIT_MESSAGE" value="[ShortestPalindrome]&#10;Sliding Window&#10;string buffer" />
+    <MESSAGE value="[ShortestPalindrome]&#10;add margin" />
+    <option name="LAST_COMMIT_MESSAGE" value="[ShortestPalindrome]&#10;add margin" />
   </component>
 </project>

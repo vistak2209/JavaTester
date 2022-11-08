@@ -58,7 +58,7 @@ public class ShortestPalindrome {
             if(!testCase.checkAnswer(output)){
                 System.out.println("answer: "+output+" for the test :"+testCase.test+" is wrong");
             }else {
-                System.out.println("answer: "+output+" for the test :"+testCase.test+" is right");
+               // System.out.println("answer: "+output+" for the test :"+testCase.test+" is right");
             }
         }
     }
@@ -68,28 +68,29 @@ public class ShortestPalindrome {
 *==============Sliding Window===================
 * ---------string buffer----------------------
 * Time Limit Exceeded
-*---------add margin----------------------
+* ---------add margin----------------------
+* Time Limit Exceeded
+* --------Use part string,part buffer
+* Time Limit Exceeded
 * */
 class MySolution {
-    private boolean extendPalindrome(StringBuffer buffer ,int margen){
-        int len =buffer.length()-1;
-        for(int i=margen;i<len-1;i++){
-            if(buffer.charAt(i)!=buffer.charAt(len-i))return false;
+    int sSize=0;
+    private boolean extendPalindrome(String s,int margen){
+
+        for(int i=0;i<sSize-margen;i++){
+            if(s.charAt(i)!=s.charAt(sSize-i-margen))return false;
         }
         return true;
     }
      public String shortestPalindrome(String s) {
+        int index=0;
+         sSize = s.length()-1;
         StringBuffer buffer = new StringBuffer();
-        for(char c:s.toCharArray()){
-            buffer.append(c);
-        }
-        int index=1;
-
-        while(!extendPalindrome(buffer,index-1)){
-            buffer.insert(index-1,buffer.charAt(buffer.length()-index));
+        while(!extendPalindrome(s,index)){
+            buffer.append(s.charAt(sSize-index));
             index++;
         }
 
-        return buffer.toString();
+        return buffer.toString()+s;
     }
 }
