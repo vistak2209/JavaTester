@@ -50,7 +50,7 @@ public class ShortestPalindrome {
         testCaseList.add(new TestCase("aacecaaa","aaacecaaa"));
         testCaseList.add(new TestCase("abcd","dcbabcd"));
         testCaseList.add(new TestCase("abbacd","dcabbacd"));
-        //testCaseList.add(new TestCase("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa","aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"));
+        //testCaseList.add(new TestCase("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa","aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"));
 
         for(TestCase testCase:testCaseList){
             MySolution solution = new MySolution();
@@ -70,15 +70,18 @@ public class ShortestPalindrome {
 * Time Limit Exceeded
 * ---------add margin----------------------
 * Time Limit Exceeded
-* --------Use part string,part buffer
+* --------Use part string,part buffer---
 * Time Limit Exceeded
+* ---------use chars--------------------
+* Runtime: 397 ms, faster than 13.13% of Java online submissions for Shortest Palindrome.
+* Memory Usage: 42.7 MB, less than 83.17% of Java online submissions for Shortest Palindrome.
 * */
 class MySolution {
     int sSize=0;
-    private boolean extendPalindrome(String s,int margen){
+    private boolean extendPalindrome(char[] characters,int margen){
 
         for(int i=0;i<sSize-margen;i++){
-            if(s.charAt(i)!=s.charAt(sSize-i-margen))return false;
+            if(characters[i]!=characters[sSize-i-margen])return false;
         }
         return true;
     }
@@ -86,11 +89,11 @@ class MySolution {
         int index=0;
          sSize = s.length()-1;
         StringBuffer buffer = new StringBuffer();
-        while(!extendPalindrome(s,index)){
-            buffer.append(s.charAt(sSize-index));
+        char[] characters =s.toCharArray();
+        while(!extendPalindrome(characters,index)){
+            buffer.append(characters[sSize-index]);
             index++;
         }
-
         return buffer.toString()+s;
     }
 }
