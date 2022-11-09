@@ -3,6 +3,8 @@ package org.example.leetcode.hard;
 import org.example.leetcode.TestCase;
 
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -79,21 +81,31 @@ public class ShortestPalindrome {
 class MySolution {
     int sSize=0;
     private boolean extendPalindrome(char[] characters,int margen){
-
-        for(int i=0;i<sSize-margen;i++){
+        for(int i=sSize-margen;i>0;i--){
             if(characters[i]!=characters[sSize-i-margen])return false;
         }
         return true;
     }
+    private void reverse(char[] characters){
+        int cSize = characters.length;
+        for(int i=0;i<cSize/2;i++){
+            char c = characters[i];
+            characters[i]=characters[cSize-i-1];
+            characters[cSize-i-1] = c;
+        }
+    }
      public String shortestPalindrome(String s) {
         int index=0;
          sSize = s.length()-1;
-        StringBuffer buffer = new StringBuffer();
+        //StringBuffer buffer = new StringBuffer();
         char[] characters =s.toCharArray();
+        reverse(characters);
         while(!extendPalindrome(characters,index)){
-            buffer.append(characters[sSize-index]);
+            //buffer.append(characters[sSize-index]);
             index++;
         }
-        return buffer.toString()+s;
+        char answer[]= new char[index];
+         answer=Arrays.copyOfRange(characters,0,index);
+        return String.valueOf(answer)+s;
     }
 }
