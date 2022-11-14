@@ -52,6 +52,8 @@ public class ShortestPalindrome {
         testCaseList.add(new TestCase("aacecaaa","aaacecaaa"));
         testCaseList.add(new TestCase("abcd","dcbabcd"));
         testCaseList.add(new TestCase("abbacd","dcabbacd"));
+        testCaseList.add(new TestCase("adcba","abcdadcba"));
+        testCaseList.add(new TestCase("ababbbabbaba","ababbabbbababbbabbaba"));
         //testCaseList.add(new TestCase("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa","aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"));
 
         for(TestCase testCase:testCaseList){
@@ -77,12 +79,15 @@ public class ShortestPalindrome {
 * ---------use chars--------------------
 * Runtime: 397 ms, faster than 13.13% of Java online submissions for Shortest Palindrome.
 * Memory Usage: 42.7 MB, less than 83.17% of Java online submissions for Shortest Palindrome.
+* ---------Use index & copy when answer
+* Runtime: 304 ms, faster than 19.67% of Java online submissions for Shortest Palindrome.
+* Memory Usage: 43.2 MB, less than 65.22% of Java online submissions for Shortest Palindrome.
 * */
 class MySolution {
     int sSize=0;
-    private boolean extendPalindrome(char[] characters,int margen){
-        for(int i=sSize-margen;i>0;i--){
-            if(characters[i]!=characters[sSize-i-margen])return false;
+    private boolean extendPalindrome(char[] characters,int right){
+        for(int i=0;i<right;i++){
+            if(characters[i]!=characters[right-i])return false;
         }
         return true;
     }
@@ -95,17 +100,20 @@ class MySolution {
         }
     }
      public String shortestPalindrome(String s) {
-        int index=0;
-         sSize = s.length()-1;
-        //StringBuffer buffer = new StringBuffer();
+        sSize = s.length();
+        if(sSize==0)return "";
         char[] characters =s.toCharArray();
-        reverse(characters);
-        while(!extendPalindrome(characters,index)){
-            //buffer.append(characters[sSize-index]);
-            index++;
+         int right=sSize-1;
+        while(true){
+         if(extendPalindrome(characters,right)) break;
+            right--;
         }
-        char answer[]= new char[index];
-         answer=Arrays.copyOfRange(characters,0,index);
+
+
+        char answer[];
+
+         answer=Arrays.copyOfRange(characters,right+1,sSize);
+         reverse(answer);
         return String.valueOf(answer)+s;
     }
 }
