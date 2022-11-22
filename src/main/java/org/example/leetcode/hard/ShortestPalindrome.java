@@ -109,7 +109,6 @@ class MySolution {
             right--;
         }
 
-
         char answer[];
 
          answer=Arrays.copyOfRange(characters,right+1,sSize);
